@@ -7,15 +7,16 @@
     <class>br.rio.puc.inf.les.model.Usuarios</class>
     <class>br.rio.puc.inf.les.model.Apartamento</class>
     <class>br.rio.puc.inf.les.model.Reservas</class>
+    <class>br.rio.puc.inf.les.model.Item</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="eclipselink.ddl-generation.output-mode" value="database"/>
       <property name="eclipselink.cache.shared.default" value="false"/>
       <property name="eclipselink.weaving" value="static"/>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/HotelLucena"/>
-      <property name="javax.persistence.jdbc.password" value="pss2016"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-      <property name="javax.persistence.jdbc.user" value="Lucena"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
     </properties>
   </persistence-unit>
 </persistence>
