@@ -5,7 +5,6 @@
  */
 package br.rio.puc.inf.les.controller;
 
-import br.rio.puc.inf.les.dao.CategoriaDAO;
 import br.rio.puc.inf.les.dao.ItemDAO;
 import br.rio.puc.inf.les.model.Item;
 import java.util.ArrayList;
@@ -49,7 +48,7 @@ public class ItemBean {
     //Métodos dos botões 
     public void record(ActionEvent actionEvent) {
         new ItemDAO().persistir(item);
-        itens = new CategoriaDAO().buscarTodas();
+        itens = new ItemDAO().buscarTodas();
         item = new Item();
     }
 

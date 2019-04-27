@@ -99,7 +99,7 @@
 
                 <br/>
                 <p:commandButton value="Salvar"  
-                                 actionListener="#{itemBean.record}" onclick="record.hide()" alt="Record"/> 
+                                 actionListener="#{itemBean.record}" update="@form" onclick="record.hide()" alt="Record"/> 
             </p:dialog>
 
             <p:dialog header="Deletar" widgetVar="remove" modal="false"> 

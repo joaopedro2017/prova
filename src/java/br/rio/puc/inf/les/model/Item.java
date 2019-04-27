@@ -42,7 +42,7 @@ public class Item implements Serializable {
     private Integer codigoItem;
     
     @Basic(optional = false)
-    @Column(name = "nome")    
+    @Column(name = "nome")
     private String nome;
     
     @Basic(optional = false)
