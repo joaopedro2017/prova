@@ -27,6 +27,11 @@
                         <h:outputText value="#{lista.contatoUsuario}" />
 
                     </p:column>
+                    <p:column headerText="Email" sortBy="#{lista.email}" filterBy="#{lista.email}">
+
+                        <h:outputText value="#{lista.email}" />
+
+                    </p:column>
                     <p:column headerText="Tipo" sortBy="#{lista.tipoUsuariol}" filterBy="#{lista.tipoUsuariol}">
 
                         <h:outputText value="#{lista.tipoUsuariol}" />
@@ -91,6 +96,8 @@
                     <p:inputText id="name" value="#{usuariosBean.usuarios.nomeUsuario}" />
                     Contato:
                     <p:inputText id="contato" value="#{usuariosBean.usuarios.contatoUsuario}" />
+                    Email:
+                    <p:inputText id="email" value="#{usuariosBean.usuarios.email}" />
                     Tipo:
                     <p:selectOneMenu id="tipo" value="#{usuariosBean.usuarios.tipoUsuariol}" style="width:125px">
                         <f:selectItem itemLabel="Selecione" itemValue="" />

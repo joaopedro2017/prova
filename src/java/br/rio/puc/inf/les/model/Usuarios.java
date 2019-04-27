@@ -49,6 +49,9 @@ public class Usuarios implements Serializable {
     @Column(name = "contatoUsuario")
     private String contatoUsuario;
     @Basic(optional = false)
+    @Column(name = "email")
+    private String email;
+    @Basic(optional = false)
     @Column(name = "tipoUsuariol")
     private String tipoUsuariol;
 
@@ -98,6 +101,14 @@ public class Usuarios implements Serializable {
     public void setContatoUsuario(String contatoUsuario) {
         this.contatoUsuario = contatoUsuario;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }   
 
     public String getTipoUsuariol() {
         return tipoUsuariol;
