@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "gitopsaks-b374"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "gitopsaks-b374"
+  template:
+    metadata:
+      labels:
+        app: "gitopsaks-b374"
+    spec:
+      containers:
+        - name: "gitopsaks-b374"
+          image: "testegitops.azurecr.io/gitopsaks"
+          ports:
+          - containerPort: 8080
